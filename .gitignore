@@ -3,3 +3,6 @@
 *.log
 .cursor/
 node_modules/
+screenshots/
+.thumbnail
+uploads/Screenshot*
