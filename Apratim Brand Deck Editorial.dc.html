@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#16233d;}
+  *{box-sizing:border-box;}
+</style>
+</helmet>
+
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<!-- ============ 1 · COVER ============ -->
+<section data-label="Cover" data-screen-label="01 Cover" data-speaker-notes="Welcome. Apratim builds AI-native software for manufacturers. Three products, one platform — the modern alternative to slow, buggy legacy ERPs." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:88px 100px;">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <img src="assets/apratim-trim.png" style="height:46px;" alt="Apratim Automations">
+    <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#a99873;">Brand &amp; Product Overview</div>
+  </div>
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:70px;">
+    <div style="max-width:1180px;">
+      <div style="width:84px; height:2px; background:#c79a3b; margin-bottom:42px;"></div>
+      <h1 style="font-family:'Newsreader',serif; font-weight:400; font-size:108px; line-height:1.0; letter-spacing:-2px; margin:0;">The new age of <span style="font-style:italic; color:#1c3a6b;">manufacturing</span> software.</h1>
+      <p style="font-family:'Archivo'; font-weight:400; font-size:33px; line-height:1.45; color:#535d6e; margin:38px 0 0; max-width:920px;">AI-native tools for the factory floor — no legacy ERP, no endless loading. Three products, one intelligent platform.</p>
+    </div>
+    <div style="width:330px; flex-shrink:0; border-top:2px solid #16233d;">
+      <div style="display:flex; gap:18px; padding:22px 0; border-bottom:1px solid #d9d2c4;"><span style="font-family:'Newsreader',serif; font-size:30px; color:#c79a3b;">01</span><div><div style="font-family:'Archivo'; font-weight:700; font-size:27px;">Apratim Factory</div><div style="font-size:24px; color:#8d8a7f;">FactoryOS</div></div></div>
+      <div style="display:flex; gap:18px; padding:22px 0; border-bottom:1px solid #d9d2c4;"><span style="font-family:'Newsreader',serif; font-size:30px; color:#c79a3b;">02</span><div><div style="font-family:'Archivo'; font-weight:700; font-size:27px;">Apratim Bid</div><div style="font-size:24px; color:#8d8a7f;">AI Tender Search</div></div></div>
+      <div style="display:flex; gap:18px; padding:22px 0;"><span style="font-family:'Newsreader',serif; font-size:30px; color:#c79a3b;">03</span><div><div style="font-family:'Archivo'; font-weight:700; font-size:27px;">Apratim Vision</div><div style="font-size:24px; color:#8d8a7f;">Vision AI</div></div></div>
+    </div>
+  </div>
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <div style="font-family:'Newsreader',serif; font-style:italic; font-size:32px; color:#1c3a6b;">One platform. Infinite possibilities.</div>
+    <div style="font-family:'Archivo'; font-weight:500; font-size:24px; letter-spacing:1px; color:#a99873;">Apratim Technologies · 2026</div>
+  </div>
+</section>
+
+<!-- ============ 2 · THE SHIFT ============ -->
+<section data-label="The Shift" data-screen-label="02 Legacy vs AI-native" data-speaker-notes="The hook. Legacy ERPs were built to record — slow, buggy, bolted together. Apratim is AI-native: fast, intelligent, built in 2026 with no legacy baggage." style="background:#fbf9f4; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#b0863a; margin-bottom:24px;">The shift</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:78px; line-height:1.05; letter-spacing:-1.2px; margin:0 0 14px; max-width:1300px;">Legacy ERP, or an <span style="font-style:italic; color:#1c3a6b;">AI-native</span> platform.</h2>
+  <p style="font-size:30px; color:#5a6678; margin:0 0 60px; max-width:1100px;">The old way still runs most factories. There is now a faster one.</p>
+  <div style="display:grid; grid-template-columns:1fr 1px 1fr; gap:64px; flex:1;">
+    <div style="display:flex; flex-direction:column;">
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#a39c8a; margin-bottom:6px;">Yesterday</div>
+      <div style="font-family:'Newsreader',serif; font-style:italic; font-size:44px; color:#9a9079; margin-bottom:40px;">The legacy ERP</div>
+      <div style="display:flex; flex-direction:column; gap:30px;">
+        <div style="font-size:31px; line-height:1.35; color:#8a8270; border-bottom:1px solid #e6e0d2; padding-bottom:26px;">Slow, always loading, frequent bugs</div>
+        <div style="font-size:31px; line-height:1.35; color:#8a8270; border-bottom:1px solid #e6e0d2; padding-bottom:26px;">Manual data entry across every module</div>
+        <div style="font-size:31px; line-height:1.35; color:#8a8270; border-bottom:1px solid #e6e0d2; padding-bottom:26px;">Reports bolted on, never real-time</div>
+        <div style="font-size:31px; line-height:1.35; color:#8a8270;">No intelligence — it only records</div>
+      </div>
+    </div>
+    <div style="background:#e0d8c6;"></div>
+    <div style="display:flex; flex-direction:column;">
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#b0863a; margin-bottom:6px;">Today · Apratim</div>
+      <div style="font-family:'Newsreader',serif; font-style:italic; font-size:44px; color:#1c3a6b; margin-bottom:40px;">The AI-native platform</div>
+      <div style="display:flex; flex-direction:column; gap:30px;">
+        <div style="font-size:31px; line-height:1.35; color:#16233d; border-bottom:1px solid #e6e0d2; padding-bottom:26px;"><span style="color:#c79a3b; margin-right:14px;">✓</span>Fast and responsive — a modern stack</div>
+        <div style="font-size:31px; line-height:1.35; color:#16233d; border-bottom:1px solid #e6e0d2; padding-bottom:26px;"><span style="color:#c79a3b; margin-right:14px;">✓</span>AI inside every workflow, not bolted on</div>
+        <div style="font-size:31px; line-height:1.35; color:#16233d; border-bottom:1px solid #e6e0d2; padding-bottom:26px;"><span style="color:#c79a3b; margin-right:14px;">✓</span>Live data — straight from your machines</div>
+        <div style="font-size:31px; line-height:1.35; color:#16233d;"><span style="color:#c79a3b; margin-right:14px;">✓</span>Insights and actions, generated for you</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 · PLATFORM OVERVIEW ============ -->
+<section data-label="The Platform" data-screen-label="03 One platform" data-speaker-notes="Apratim is one platform, three products. Apratim Factory runs the factory, Apratim Bid wins the work, Apratim Vision watches the floor. AI runs through all three." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#b0863a; margin-bottom:24px;">The platform</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:78px; line-height:1.04; letter-spacing:-1.2px; margin:0 0 12px;">One platform for the <span style="font-style:italic; color:#1c3a6b;">smart factory</span>.</h2>
+  <p style="font-size:30px; color:#5a6678; margin:0 0 56px; max-width:1100px;">Three products that run, win, and watch your operation — with AI woven through each one.</p>
+  <div style="display:flex; flex-direction:column; flex:1; border-top:2px solid #16233d;">
+    <div style="display:flex; align-items:center; gap:48px; padding:36px 8px; border-bottom:1px solid #d9d2c4; flex:1;">
+      <span style="font-family:'Newsreader',serif; font-size:60px; color:#c79a3b; width:90px; flex-shrink:0;">01</span>
+      <div style="width:300px; flex-shrink:0;"><div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:1px; color:#b0863a;">Apratim</div><div style="font-family:'Newsreader',serif; font-size:44px; color:#16233d; line-height:1;">Factory</div></div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#a39c8a; width:240px; flex-shrink:0;">FactoryOS</div>
+      <div style="font-size:30px; line-height:1.35; color:#3f495a;">End-to-end FactoryOS — planning, scheduling, job orders and machine management in one system. <span style="font-family:'Newsreader',serif; font-style:italic; color:#1c3a6b;">Runs the factory.</span></div>
+    </div>
+    <div style="display:flex; align-items:center; gap:48px; padding:36px 8px; border-bottom:1px solid #d9d2c4; flex:1;">
+      <span style="font-family:'Newsreader',serif; font-size:60px; color:#c79a3b; width:90px; flex-shrink:0;">02</span>
+      <div style="width:300px; flex-shrink:0;"><div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:1px; color:#b0863a;">Apratim</div><div style="font-family:'Newsreader',serif; font-size:44px; color:#16233d; line-height:1;">Bid</div></div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#a39c8a; width:240px; flex-shrink:0;">AI Tender Search</div>
+      <div style="font-size:30px; line-height:1.35; color:#3f495a;">AI search for government tenders, built for the mechanical industry — days of work in one click. <span style="font-family:'Newsreader',serif; font-style:italic; color:#1c3a6b;">Wins the work.</span></div>
+    </div>
+    <div style="display:flex; align-items:center; gap:48px; padding:36px 8px; flex:1;">
+      <span style="font-family:'Newsreader',serif; font-size:60px; color:#c79a3b; width:90px; flex-shrink:0;">03</span>
+      <div style="width:300px; flex-shrink:0;"><div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:1px; color:#b0863a;">Apratim</div><div style="font-family:'Newsreader',serif; font-size:44px; color:#16233d; line-height:1;">Vision</div></div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#a39c8a; width:240px; flex-shrink:0;">Vision AI</div>
+      <div style="font-size:30px; line-height:1.35; color:#3f495a;">Vision AI on the CCTV you already own — workers, safety, security and machine loading. <span style="font-family:'Newsreader',serif; font-style:italic; color:#1c3a6b;">Watches the floor.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 · MEPBLOOM HERO ============ -->
+<section data-label="Apratim Factory" data-screen-label="04 Apratim Factory" data-speaker-notes="Apratim Factory is our FactoryOS for mechanical and aerospace manufacturers. Every module in one place, talking directly to your machines. AI plans and auto-schedules the floor." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; padding:0;">
+  <div style="width:45%; padding:90px 56px 90px 100px; display:flex; flex-direction:column;">
+    <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:18px;">Product 01 — FactoryOS</div>
+    <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:92px; line-height:0.98; letter-spacing:-1.5px; margin:0 0 20px;">Apratim Factory</h2>
+    <p style="font-size:32px; line-height:1.35; color:#3f495a; margin:0 0 40px;">End-to-end <span style="font-family:'Newsreader',serif; font-style:italic;">FactoryOS</span> for mechanical &amp; aerospace manufacturers.</p>
+    <div style="display:flex; flex-direction:column; gap:0; margin-bottom:36px; border-top:1px solid #d9d2c4;">
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:22px 0; border-bottom:1px solid #d9d2c4;">Every module in one place — planning, scheduling, job orders, machine management.</div>
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:22px 0; border-bottom:1px solid #d9d2c4;">Connects directly to your machines for live capacity and load.</div>
+    </div>
+    <div style="border-left:3px solid #c79a3b; padding:6px 0 6px 26px; margin-bottom:auto;">
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; text-transform:uppercase; color:#b0863a; margin-bottom:10px;">AI inside</div>
+      <div style="font-size:28px; line-height:1.4; color:#16233d;">Auto-scheduling and demand forecasting plan the week for you — and flag overloads before they happen.</div>
+    </div>
+    <div style="display:flex; gap:22px; align-items:center; margin-top:36px;">
+      <a href="https://drive.google.com/file/d/15Lsd3ZwHNEc9Ry5rrYIDqs2Oyd7dedpT/view" target="_blank" style="display:inline-flex; align-items:center; gap:12px; background:#16233d; color:#fff; font-family:'Archivo'; font-weight:600; font-size:26px; padding:19px 34px; border-radius:100px; text-decoration:none;">▶ Watch demo</a>
+      <a href="https://mepbloom-erp.vercel.app/" target="_blank" style="display:inline-flex; align-items:center; gap:10px; color:#16233d; font-family:'Archivo'; font-weight:600; font-size:26px; border-bottom:2px solid #c79a3b; padding-bottom:4px; text-decoration:none;">Explore live →</a>
+    </div>
+  </div>
+  <div style="width:55%; display:flex; align-items:center; justify-content:center; padding:90px 100px 90px 40px;">
+    <div style="width:100%; border-radius:12px; overflow:hidden; background:#fff; border:1px solid #e3ddcf; box-shadow:0 36px 70px -28px rgba(22,35,61,.40);">
+      <div style="height:42px; background:#efeae0; display:flex; align-items:center; gap:9px; padding:0 20px; border-bottom:1px solid #e3ddcf;"><span style="width:12px;height:12px;border-radius:50%;background:#c79a3b;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span></div>
+      <img src="assets/mep-gantt-c.png" style="width:100%; display:block;" alt="Apratim Factory machine load plan">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 · MEPBLOOM MODULES ============ -->
+<section data-label="Apratim Factory · Modules" data-screen-label="05 Apratim Factory modules" data-speaker-notes="One system covers the whole operation. Every report is live and one click away — no overnight batch. AI keeps the schedule balanced." style="background:#fbf9f4; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:22px;">Apratim Factory — inside the platform</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:70px; line-height:1.04; letter-spacing:-1px; margin:0 0 50px; max-width:1300px;">Everything the floor <span style="font-style:italic; color:#1c3a6b;">runs on</span>, in one system.</h2>
+  <div style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; flex:1; align-items:center;">
+    <div style="border-top:2px solid #16233d;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Production Planning</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">01</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Scheduling &amp; Machine Load</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">02</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Job &amp; Work Orders</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">03</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Machine Management</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">04</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Procurement &amp; POs</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">05</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Quality &amp; Certificates</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">06</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px; border-bottom:1px solid #ddd6c8;"><span style="font-size:29px; font-weight:600;">Finished Goods</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#b3ac98;">07</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; padding:20px 4px;"><span style="font-size:29px; font-weight:700; color:#1c3a6b;">Live Reports &amp; KPIs</span><span style="font-family:'Newsreader',serif; font-size:24px; color:#c79a3b;">08</span></div>
+    </div>
+    <div style="width:100%; border-radius:12px; overflow:hidden; background:#fff; border:1px solid #e3ddcf; box-shadow:0 36px 64px -28px rgba(22,35,61,.36);">
+      <div style="height:42px; background:#efeae0; display:flex; align-items:center; gap:9px; padding:0 20px; border-bottom:1px solid #e3ddcf;"><span style="width:12px;height:12px;border-radius:50%;background:#c79a3b;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span></div>
+      <img src="assets/mep-reports-c.png" style="width:100%; display:block;" alt="Apratim Factory reports">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6 · BIDNOVA HERO ============ -->
+<section data-label="Apratim Bid" data-screen-label="06 Apratim Bid" data-speaker-notes="Apratim Bid is AI search for government tenders, built for the mechanical industry. Indian tenders can be open for half an hour. What took a team days now takes one click." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; padding:0;">
+  <div style="width:45%; padding:90px 56px 90px 100px; display:flex; flex-direction:column;">
+    <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:18px;">Product 02 — AI Tender Search</div>
+    <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:92px; line-height:0.98; letter-spacing:-1.5px; margin:0 0 20px;">Apratim Bid</h2>
+    <p style="font-size:32px; line-height:1.35; color:#3f495a; margin:0 0 40px;">AI-powered search for government tenders — built for the <span style="font-family:'Newsreader',serif; font-style:italic;">mechanical industry</span>.</p>
+    <div style="display:flex; gap:54px; margin-bottom:38px; border-top:2px solid #16233d; padding-top:30px;">
+      <div><div style="font-family:'Newsreader',serif; font-size:62px; line-height:1; color:#1c3a6b; letter-spacing:-1px;">Days→Minutes</div><div style="font-size:24px; color:#8d8a7f; margin-top:10px;">tender discovery</div></div>
+      <div><div style="font-family:'Newsreader',serif; font-size:62px; line-height:1; color:#1c3a6b; letter-spacing:-1px;">1 click</div><div style="font-size:24px; color:#8d8a7f; margin-top:10px;">from alert to matched tenders</div></div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:0; margin-bottom:auto; border-top:1px solid #d9d2c4;">
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:20px 0; border-bottom:1px solid #d9d2c4;">Replaces 10+ people doing manual portal searches.</div>
+      <div style="font-size:28px; line-height:1.4; color:#16233d; padding:20px 0;"><span style="color:#c79a3b;">⚡ AI inside —</span> reads each tender, scores fit, and drafts every response document.</div>
+    </div>
+    <div style="margin-top:36px;">
+      <a href="https://drive.google.com/file/d/1eNQ57VZ0q2T8zjnz6XFoUL1OTx1hllMb/view" target="_blank" style="display:inline-flex; align-items:center; gap:12px; background:#16233d; color:#fff; font-family:'Archivo'; font-weight:600; font-size:26px; padding:19px 34px; border-radius:100px; text-decoration:none;">▶ Watch demo</a>
+    </div>
+  </div>
+  <div style="width:55%; display:flex; align-items:center; justify-content:center; padding:90px 100px 90px 40px;">
+    <div style="width:100%; border-radius:12px; overflow:hidden; background:#fff; border:1px solid #e3ddcf; box-shadow:0 36px 70px -28px rgba(22,35,61,.40);">
+      <div style="height:42px; background:#efeae0; display:flex; align-items:center; gap:9px; padding:0 20px; border-bottom:1px solid #e3ddcf;"><span style="width:12px;height:12px;border-radius:50%;background:#c79a3b;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span></div>
+      <img src="assets/bid-tender-c.png" style="width:100%; display:block;" alt="Apratim Bid tender workspace">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 · BIDNOVA HOW IT WORKS ============ -->
+<section data-label="Apratim Bid · How" data-screen-label="07 Apratim Bid how it works" data-speaker-notes="Three AI steps. Discover: scans portals and matches tenders to your capability. Analyze: extracts requirements and scores fit. Generate: drafts each response document, ready to submit." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:22px;">Apratim Bid — how it works</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:70px; line-height:1.04; letter-spacing:-1px; margin:0 0 46px; max-width:1300px;">From tender alert to <span style="font-style:italic; color:#1c3a6b;">ready proposal</span> — in three AI steps.</h2>
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:54px; margin-bottom:44px;">
+    <div style="border-top:2px solid #16233d; padding-top:26px;">
+      <div style="font-family:'Newsreader',serif; font-size:34px; color:#c79a3b; margin-bottom:14px;">01 · Discover</div>
+      <div style="font-size:29px; line-height:1.4; color:#3f495a;">AI scans tender portals and matches live opportunities to what you actually build.</div>
+    </div>
+    <div style="border-top:2px solid #16233d; padding-top:26px;">
+      <div style="font-family:'Newsreader',serif; font-size:34px; color:#c79a3b; margin-bottom:14px;">02 · Analyze</div>
+      <div style="font-size:29px; line-height:1.4; color:#3f495a;">It reads every requirement, summarises the tender, and scores your fit as a match %.</div>
+    </div>
+    <div style="border-top:2px solid #1c3a6b; padding-top:26px;">
+      <div style="font-family:'Newsreader',serif; font-size:34px; color:#c79a3b; margin-bottom:14px;">03 · Generate</div>
+      <div style="font-size:29px; line-height:1.4; color:#16233d;">It drafts every response document required — ready to edit in-app and submit on time.</div>
+    </div>
+  </div>
+  <div style="flex:1; border-radius:12px; overflow:hidden; background:#fff; border:1px solid #e3ddcf; box-shadow:0 30px 60px -28px rgba(22,35,61,.34); display:flex; flex-direction:column;">
+    <div style="height:42px; background:#efeae0; display:flex; align-items:center; gap:9px; padding:0 20px; border-bottom:1px solid #e3ddcf; flex-shrink:0;"><span style="width:12px;height:12px;border-radius:50%;background:#c79a3b;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span></div>
+    <div style="flex:1; overflow:hidden;"><img src="assets/bid-proposal-c.png" style="width:100%; display:block;" alt="Apratim Bid proposal generator"></div>
+  </div>
+</section>
+
+<!-- ============ 8 · NETRA HERO ============ -->
+<section data-label="Apratim Vision" data-screen-label="08 Apratim Vision" data-speaker-notes="Apratim Vision is Vision AI for factory automation — on the CCTV you already own, no new hardware. It checks workers, watches safety and security, and tracks machine loading. Footage never leaves your network. First of its kind in India." style="background:#fbf9f4; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; padding:0;">
+  <div style="width:45%; padding:90px 56px 90px 100px; display:flex; flex-direction:column;">
+    <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:18px;">Product 03 — Vision AI</div>
+    <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:92px; line-height:0.98; letter-spacing:-1.5px; margin:0 0 20px;">Apratim Vision</h2>
+    <p style="font-size:32px; line-height:1.35; color:#3f495a; margin:0 0 36px;">Vision AI for factory automation — on the <span style="font-family:'Newsreader',serif; font-style:italic;">CCTV you already own</span>.</p>
+    <div style="display:flex; flex-direction:column; gap:0; margin-bottom:34px; border-top:1px solid #d9d2c4;">
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:20px 0; border-bottom:1px solid #d9d2c4;">Checks workers, safety and security — who is in, who is out.</div>
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:20px 0; border-bottom:1px solid #d9d2c4;">Tracks machine loading and idle time for higher ROI.</div>
+      <div style="font-size:28px; line-height:1.4; color:#3f495a; padding:20px 0;">100% on-prem — your footage never leaves your network.</div>
+    </div>
+    <div style="margin-bottom:auto;"><div style="font-family:'Newsreader',serif; font-style:italic; font-size:40px; line-height:1.2; color:#1c3a6b;">“No one else in India is doing this.”</div></div>
+    <div style="margin-top:34px;">
+      <a href="https://drive.google.com/file/d/1x_roTysS1Jedjyl1jtpzBLpXXXiraHst/view" target="_blank" style="display:inline-flex; align-items:center; gap:12px; background:#16233d; color:#fff; font-family:'Archivo'; font-weight:600; font-size:26px; padding:19px 34px; border-radius:100px; text-decoration:none;">▶ Watch demo</a>
+    </div>
+  </div>
+  <div style="width:55%; display:flex; align-items:center; justify-content:center; padding:90px 100px 90px 40px;">
+    <div style="width:100%; border-radius:12px; overflow:hidden; background:#000; border:1px solid #e3ddcf; box-shadow:0 36px 70px -28px rgba(22,35,61,.45);">
+      <div style="height:42px; background:#efeae0; display:flex; align-items:center; gap:9px; padding:0 20px; border-bottom:1px solid #e3ddcf;"><span style="width:12px;height:12px;border-radius:50%;background:#c79a3b;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span><span style="width:12px;height:12px;border-radius:50%;background:#cfc6b4;"></span></div>
+      <img src="assets/netra-factory-c.png" style="width:100%; display:block;" alt="Apratim Vision factory vision feed">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9 · NETRA CAPABILITIES ============ -->
+<section data-label="Apratim Vision · Capabilities" data-screen-label="09 Apratim Vision capabilities" data-speaker-notes="Apratim Vision ships with detection models for the floor: PPE, SOP, restricted zones, idle machines, dispatch, people movement. Result: more uptime, fewer incidents, higher ROI." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:3px; text-transform:uppercase; color:#b0863a; margin-bottom:22px;">Apratim Vision — what it watches</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:70px; line-height:1.04; letter-spacing:-1px; margin:0 0 12px;">Eyes on <span style="font-style:italic; color:#1c3a6b;">every corner</span> of the floor.</h2>
+  <p style="font-size:30px; color:#5a6678; margin:0 0 48px; max-width:1100px;">Detection models running out of the box — turning passive footage into decisions.</p>
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0 56px; margin-bottom:46px; border-top:2px solid #16233d;">
+    <div style="padding:28px 0; border-bottom:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">PPE &amp; safety gear</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Helmet, vest &amp; glove checks with real-time alerts.</div></div>
+    <div style="padding:28px 0; border-bottom:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">SOP compliance</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Per-station step checks and deviation alerts.</div></div>
+    <div style="padding:28px 0; border-bottom:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">Idle machine &amp; downtime</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Live idle detection, downtime logged automatically.</div></div>
+    <div style="padding:28px 0;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">Restricted &amp; hazard zones</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Zone-breach, tailgating and intrusion flags.</div></div>
+    <div style="padding:28px 0;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">People in / out</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Security and attendance at every entry point.</div></div>
+    <div style="padding:28px 0;"><div style="font-family:'Newsreader',serif; font-size:32px; color:#16233d; margin-bottom:8px;">Loading-bay &amp; dispatch</div><div style="font-size:25px; color:#5a6678; line-height:1.35;">Dispatch-delay alerts and loading-bay SLA tracking.</div></div>
+  </div>
+  <div style="display:flex; gap:64px; align-items:center; margin-top:auto;">
+    <div><div style="font-family:'Newsreader',serif; font-size:62px; color:#1c3a6b; line-height:1;">10+</div><div style="font-size:24px; color:#8d8a7f; margin-top:8px;">detection models</div></div>
+    <div style="width:1px; height:70px; background:#d9d2c4;"></div>
+    <div><div style="font-family:'Newsreader',serif; font-size:62px; color:#1c3a6b; line-height:1;">100%</div><div style="font-size:24px; color:#8d8a7f; margin-top:8px;">on-prem · footage stays local</div></div>
+    <div style="width:1px; height:70px; background:#d9d2c4;"></div>
+    <div style="flex:1;"><div style="font-family:'Newsreader',serif; font-style:italic; font-size:36px; color:#c79a3b;">More uptime. Fewer incidents. Higher ROI.</div></div>
+  </div>
+</section>
+
+<!-- ============ 10 · AI THREAD (dark) ============ -->
+<section data-label="AI Everywhere" data-screen-label="10 AI thread" data-speaker-notes="The common thread: AI is the foundation of all three products. Apratim Factory plans, Apratim Bid writes, Apratim Vision sees. This is what makes us new-age." style="background:#16233d; color:#fff; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#c79a3b; margin-bottom:24px;">Why it's different</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:78px; line-height:1.04; letter-spacing:-1.2px; margin:0 0 12px;">AI runs through <span style="font-style:italic; color:#d8b15f;">every product</span>.</h2>
+  <p style="font-size:30px; color:#aab4c6; margin:0 0 50px; max-width:1100px;">Not a chatbot bolted to the side — intelligence built into the core of each workflow.</p>
+  <div style="display:flex; flex-direction:column; flex:1; border-top:1px solid #2c3a55;">
+    <div style="display:flex; align-items:center; gap:44px; padding:34px 4px; border-bottom:1px solid #2c3a55; flex:1;">
+      <div style="width:240px; font-family:'Newsreader',serif; font-size:46px; color:#fff; flex-shrink:0;">Apratim Factory</div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; color:#c79a3b; width:160px; flex-shrink:0;">AI PLANS</div>
+      <div style="font-size:30px; color:#dbe2ee; line-height:1.35;">Auto-scheduling, demand forecasting and overload detection across the machine floor.</div>
+    </div>
+    <div style="display:flex; align-items:center; gap:44px; padding:34px 4px; border-bottom:1px solid #2c3a55; flex:1;">
+      <div style="width:240px; font-family:'Newsreader',serif; font-size:46px; color:#fff; flex-shrink:0;">Apratim Bid</div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; color:#c79a3b; width:160px; flex-shrink:0;">AI WRITES</div>
+      <div style="font-size:30px; color:#dbe2ee; line-height:1.35;">Tender discovery, requirement analysis, fit scoring and full proposal drafting.</div>
+    </div>
+    <div style="display:flex; align-items:center; gap:44px; padding:34px 4px; flex:1;">
+      <div style="width:240px; font-family:'Newsreader',serif; font-size:46px; color:#fff; flex-shrink:0;">Apratim Vision</div>
+      <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; color:#c79a3b; width:160px; flex-shrink:0;">AI SEES</div>
+      <div style="font-size:30px; color:#dbe2ee; line-height:1.35;">Computer-vision detection turning existing cameras into live operational insight.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · WHY APRATIM ============ -->
+<section data-label="Why Apratim" data-screen-label="11 Why Apratim" data-speaker-notes="Why us. We are new — founded 2026 — and that is the advantage. AI-native from day one, no legacy code, built specifically for mechanical and aerospace manufacturing. A focused team that ships fast." style="background:#f4f1ea; color:#16233d; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:90px 100px;">
+  <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#b0863a; margin-bottom:24px;">Why Apratim</div>
+  <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:76px; line-height:1.03; letter-spacing:-1.2px; margin:0 0 12px;">New company. <span style="font-style:italic; color:#1c3a6b;">No legacy baggage.</span></h2>
+  <p style="font-size:30px; color:#5a6678; margin:0 0 54px; max-width:1150px;">Being new is the edge — AI-native from day one, purpose-built for your industry.</p>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:2px solid #16233d; border-bottom:1px solid #d9d2c4; margin-bottom:48px;">
+    <div style="padding:40px 36px 40px 0; border-right:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:78px; color:#1c3a6b; line-height:1; letter-spacing:-1px;">2026</div><div style="font-size:25px; color:#8d8a7f; margin-top:14px;">founded — modern stack, no legacy</div></div>
+    <div style="padding:40px 36px; border-right:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:78px; color:#16233d; line-height:1;">10</div><div style="font-size:25px; color:#8d8a7f; margin-top:14px;">a focused team that ships fast</div></div>
+    <div style="padding:40px 36px; border-right:1px solid #d9d2c4;"><div style="font-family:'Newsreader',serif; font-size:78px; color:#16233d; line-height:1;">3</div><div style="font-size:25px; color:#8d8a7f; margin-top:14px;">products, one connected platform</div></div>
+    <div style="padding:40px 0 40px 36px;"><div style="font-family:'Newsreader',serif; font-size:78px; color:#c79a3b; line-height:1;">AI</div><div style="font-size:25px; color:#8d8a7f; margin-top:14px;">at the core of everything we build</div></div>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:54px;">
+    <div style="font-size:29px; line-height:1.4; color:#3f495a;"><span style="color:#c79a3b; margin-right:12px;">●</span>Built specifically for mechanical &amp; aerospace manufacturing — not generic ERP.</div>
+    <div style="font-size:29px; line-height:1.4; color:#3f495a;"><span style="color:#c79a3b; margin-right:12px;">●</span>A modern foundation means fast, reliable software — quick to evolve with you.</div>
+  </div>
+</section>
+
+<!-- ============ 12 · CONTACT (dark) ============ -->
+<section data-label="Contact" data-screen-label="12 Contact" data-speaker-notes="Close. Invite them to a demo and a pilot. Leave contact details on screen. Thank them." style="background:#16233d; color:#fff; font-family:'Archivo',sans-serif; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:88px 100px;">
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <img src="assets/apratim-white.png" style="height:46px;" alt="Apratim Automations">
+    <div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:4px; text-transform:uppercase; color:#9aa6bd;">Let's talk</div>
+  </div>
+  <div style="max-width:1300px;">
+    <div style="width:84px; height:2px; background:#c79a3b; margin-bottom:40px;"></div>
+    <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:100px; line-height:1.0; letter-spacing:-2px; margin:0;">Let's bring AI to<br>your <span style="font-style:italic; color:#d8b15f;">factory floor</span>.</h2>
+    <p style="font-size:32px; line-height:1.4; color:#c4d0e3; margin:34px 0 0; max-width:1000px;">Book a walkthrough of Apratim Factory, Apratim Bid and Apratim Vision — and a pilot for your plant.</p>
+  </div>
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; border-top:1px solid #2c3a55; padding-top:32px;">
+    <div style="display:flex; gap:70px;">
+      <div><div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; color:#7e8ba3; margin-bottom:10px;">EMAIL</div><div style="font-size:30px; color:#fff;">Apratimautomations@gmail.com</div></div>
+      <div><div style="font-family:'Archivo'; font-weight:600; font-size:24px; letter-spacing:2px; color:#7e8ba3; margin-bottom:10px;">PHONE</div><div style="font-size:30px; color:#fff;">+91 6366 273 659</div></div>
+    </div>
+    <div style="font-family:'Newsreader',serif; font-style:italic; font-size:32px; color:#c79a3b;">One platform. Infinite possibilities.</div>
+  </div>
+</section>
+
+</x-import>
+</x-dc>
+</body>
+</html>

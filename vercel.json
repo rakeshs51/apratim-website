@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Apratim Website.dc.html" }
+  ]
+}
