@@ -12,6 +12,10 @@
 <meta name="description" content="Apratim builds AI-native software for mechanical and aerospace manufacturers: Apratim Factory (FactoryOS), Apratim Bid (AI government-tender search) and Apratim Vision (on-prem Vision AI). Built by a team with 30+ years on the factory floor.">
 <meta name="keywords" content="FactoryOS, manufacturing ERP, AI tender search, government tenders, vision AI, aerospace manufacturing software, mechanical manufacturing, factory automation, Apratim">
 <meta name="theme-color" content="#0a1f44">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Apratim Automations — AI-Native Software for Aerospace &amp; Mechanical Manufacturing">
 <meta property="og:description" content="One AI-native platform with three products — to run your factory, win government tenders, and watch your floor. Built by a team with 30+ years in aerospace &amp; mechanical manufacturing.">
@@ -33,7 +37,17 @@
   @keyframes drift{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(36px,-26px) scale(1.08);}}
   @keyframes drift2{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-40px,24px) scale(1.1);}}
   @keyframes pulseDot{0%,100%{transform:scale(1);box-shadow:0 0 8px #c79a3b;}50%{transform:scale(1.4);box-shadow:0 0 18px #c79a3b;}}
-  @media (prefers-reduced-motion: reduce){*{animation:none !important;}}
+  @keyframes logo-marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+  .clients-marquee{overflow:hidden;width:100%;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+  .clients-track{display:flex;width:max-content;gap:18px;animation:logo-marquee 42s linear infinite;will-change:transform;}
+  .clients-marquee:hover .clients-track{animation-play-state:paused;}
+  .r-client-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;padding:14px 20px;height:72px;min-width:160px;flex:0 0 auto;box-shadow:0 8px 24px -16px rgba(0,0,0,.5);}
+  .r-client-logo img{max-height:44px;max-width:160px;width:auto;height:auto;object-fit:contain;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important;}
+    .clients-track{animation:none !important;flex-wrap:wrap;justify-content:center;width:100%;max-width:1100px;margin:0 auto;}
+    .clients-marquee{mask-image:none;-webkit-mask-image:none;overflow:visible;}
+  }
   .nav-burger{display:none;}
   .site-logo{display:block;height:46px;width:auto;max-width:min(320px,70vw);object-fit:contain;}
   .site-logo--footer{height:52px;max-width:min(340px,85vw);}
@@ -66,8 +80,8 @@
     .r-experience-band h2{max-width:100% !important;}
     .site-logo{height:38px;max-width:min(240px,72vw);}
     .site-logo--footer{height:44px;max-width:min(280px,88vw);}
-    .r-clients{gap:12px !important;}
-    .r-client-logo{height:64px !important;min-width:120px !important;max-width:160px !important;padding:10px 14px !important;}
+    .clients-track{gap:12px !important;animation-duration:32s;}
+    .r-client-logo{height:64px !important;min-width:140px !important;padding:10px 14px !important;}
     .r-client-logo img{max-height:36px !important;max-width:130px !important;}
   }
   @media (min-width:881px){
@@ -143,17 +157,26 @@
   </header>
 
   <!-- ======== TRUSTED BY ======== -->
-  <section style="background:#060f22; border-top:1px solid rgba(255,255,255,.05); border-bottom:1px solid rgba(255,255,255,.05); padding:48px 30px;">
-    <div style="max-width:1260px; margin:0 auto; text-align:center;">
-      <div style="font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:2px; color:#93a4c0; margin-bottom:28px; text-transform:uppercase;">Trusted by teams at</div>
-      <div class="r-clients" style="display:flex; flex-wrap:wrap; gap:14px 18px; align-items:center; justify-content:center;">
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/cim-tools.png" alt="CIM Tools" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/inovit.png" alt="INOVIT" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/komal-plast.png" alt="Komal Plast Machinery" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/hawk-aerospace.png" alt="Hawk Aerospace" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/mawerk.png" alt="mawerk" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/lean-automation.png" alt="LEAN Automation" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
-        <div class="r-client-logo" style="display:flex; align-items:center; justify-content:center; background:#fff; border-radius:12px; padding:14px 20px; height:72px; min-width:140px; max-width:200px; box-shadow:0 8px 24px -16px rgba(0,0,0,.5);"><img src="assets/clients/dautya-aerospace.png" alt="Dautya Aerospace" style="max-height:44px; max-width:160px; width:auto; height:auto; object-fit:contain;"></div>
+  <section style="background:#060f22; border-top:1px solid rgba(255,255,255,.05); border-bottom:1px solid rgba(255,255,255,.05); padding:48px 0;">
+    <div style="max-width:1260px; margin:0 auto; text-align:center; padding:0 30px 28px;">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:2px; color:#93a4c0; text-transform:uppercase;">Trusted by teams at</div>
+    </div>
+    <div class="clients-marquee" aria-label="Client logos">
+      <div class="clients-track">
+        <div class="r-client-logo"><img src="assets/clients/cim-tools.png" alt="CIM Tools"></div>
+        <div class="r-client-logo"><img src="assets/clients/inovit.png" alt="INOVIT"></div>
+        <div class="r-client-logo"><img src="assets/clients/komal-plast.png" alt="Komal Plast Machinery"></div>
+        <div class="r-client-logo"><img src="assets/clients/hawk-aerospace.png" alt="Hawk Aerospace"></div>
+        <div class="r-client-logo"><img src="assets/clients/mawerk.png" alt="mawerk"></div>
+        <div class="r-client-logo"><img src="assets/clients/lean-automation.png" alt="LEAN Automation"></div>
+        <div class="r-client-logo"><img src="assets/clients/dautya-aerospace.png" alt="Dautya Aerospace"></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/cim-tools.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/inovit.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/komal-plast.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/hawk-aerospace.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/mawerk.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/lean-automation.png" alt=""></div>
+        <div class="r-client-logo" aria-hidden="true"><img src="assets/clients/dautya-aerospace.png" alt=""></div>
       </div>
     </div>
   </section>
